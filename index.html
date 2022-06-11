@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guitar Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Guitar Shop</a>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="prdName" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="prdPrice" placeholder="Price">
+                        </div>
+                    </div>
+                    <div class="button-row">
+                        <button type="submit" class="btn btn-primary btn-sm" id="addBtn">
+                            <i class="fas fa-plus"><span class="ml-1">Add</span></i>
+                        </button>
+                        <button type="submit" class="btn btn-warning btn-sm" id="editBtn">
+                            <i class="far fa-edit"><span class="ml-1">Save changes</span></i>
+                        </button>
+                        <button type="submit" class="btn btn-danger btn-sm" id="deleteBtn">
+                            <i class="fas fa-times"><span class="ml-1">Delete</span></i>
+                        </button>
+                        <button type="submit" class="btn btn-secondary btn-sm" id="cancelBtn">
+                            <i class="fas fa-arrow-circle-left"><span class="ml-1">Cancel</span></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-3" id="card">
+            <table class="table">
+                <tbody id="item-list"></tbody>
+            </table>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-footer text-right">
+                <p>Total ($) <strong><span id="dolar"></span></strong></p>
+                <p>Total (TL) <strong><span id="tl"></span></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
